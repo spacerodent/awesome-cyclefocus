@@ -69,15 +69,15 @@ cyclefocus = {
         -- Default callback, which will gets applied for all offsets (first).
         default = function (preset, args)
             -- Default font and icon size (gets overwritten for current/0 index).
-            preset.font = 'sans 8'
-            preset.icon_size = dpi(24)
+            preset.font = 'Proza Libre 16'
+            preset.icon_size = dpi(36)
             preset.text = escape_markup(cyclefocus.get_client_title(args.client, false))
         end,
 
         -- Preset for current entry.
         ["0"] = function (preset, args)
-            preset.font = 'sans 14'
-            preset.icon_size = dpi(36)
+            preset.font = 'Proza Libre 18'
+            preset.icon_size = dpi(48)
             preset.text = escape_markup(cyclefocus.get_client_title(args.client, true))
             -- Add screen number if there is more than one.
             if screen.count() > 1 then
